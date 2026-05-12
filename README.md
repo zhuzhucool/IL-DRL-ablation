@@ -1,5 +1,7 @@
 # IL-DRL Ablation Simulation Platform
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20133085.svg)](https://doi.org/10.5281/zenodo.20133085)
+
 This repository contains a MATLAB application for prostate ultrasound ablation simulation and control using binary, PID, DRL, and IL-DRL controllers.
 
 ## Associated Manuscript
@@ -8,7 +10,13 @@ This repository is the code release associated with the manuscript:
 
 > Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation
 
-The code provides the simulation environment, controller implementation, example data, and pre-trained agent files used to support reproducibility of the main computational results. Citation details and DOI should be updated after the manuscript is accepted or published.
+The code provides the simulation environment, controller implementation, example data, and pre-trained agent files used to support reproducibility of the main computational results.
+
+## Citation
+
+If you use this code, please cite the archived software release:
+
+Lin, S., Zhu, Y., Cui, C., Chen, L., Tong, M., Xu, H., Li, Y., Wen, J., & Chen, K. IL-DRL Ablation Simulation Platform. Zenodo. https://doi.org/10.5281/zenodo.20133085
 
 ## Directory Structure
 
