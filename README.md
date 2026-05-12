@@ -68,8 +68,6 @@ Before making the repository public, confirm that these files do not contain pri
 
 - The `admin / 123456` login is intended only as a demonstration credential. Do not reuse it for any deployed or security-sensitive system.
 - The project uses k-Wave, distributed under the GNU LGPL. The original k-Wave license files are retained in `drl_pid/k-Wave/license/`.
-- If large datasets or full model checkpoints are needed, host them on Zenodo or another archival service and link the DOI here.
-- Replace any placeholder GitHub or Zenodo links in manuscripts with the final repository URL and DOI before submission.
 
 ## k-Wave Citation
 
