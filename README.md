@@ -11,7 +11,7 @@ This repository contains a MATLAB application for prostate ultrasound ablation s
 
 ## Requirements
 
-- MATLAB with App Designer support.
+- MATLAB R2024a with App Designer support.
 - MATLAB toolboxes required by the code, including image processing and reinforcement learning functionality where applicable.
 - k-Wave is included under `drl_pid/k-Wave`.
 
