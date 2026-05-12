@@ -2,6 +2,14 @@
 
 This repository contains a MATLAB application for prostate ultrasound ablation simulation and control using binary, PID, DRL, and IL-DRL controllers.
 
+## Associated Manuscript
+
+This repository is the code release associated with the manuscript:
+
+> Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation
+
+The code provides the simulation environment, controller implementation, example data, and pre-trained agent files used to support reproducibility of the main computational results. Citation details and DOI should be updated after the manuscript is accepted or published.
+
 ## Directory Structure
 
 - `main/`: MATLAB App Designer source exported as `.m` files.
