@@ -1,0 +1,30 @@
+# MATLAB autosave and generated files
+*.asv
+*.m~
+slprj/
+*.slxc
+*.mex*
+
+# Local MATLAB output and temporary results
+results/
+output/
+temp/
+*.fig
+*.avi
+*.mp4
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+~$*
+~WRL*.tmp
+
+# Local assistant/tooling state
+.claude/
+.codex/
+
+# Archives and local documents not needed for the GitHub code release
+*.zip
+*.doc
+*.docx
+*.pdf
