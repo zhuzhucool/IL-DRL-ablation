@@ -1,0 +1,59 @@
+{
+  "title": "IL-DRL Ablation Simulation Platform",
+  "upload_type": "software",
+  "description": "MATLAB R2024a code release for the manuscript \"Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation\". The repository includes the simulation environment, controller implementation, example data, and pre-trained agent files for prostate ultrasound ablation simulation.",
+  "creators": [
+    {
+      "name": "Lin, Shengrong",
+      "affiliation": "College of Computer Science and Technology, Zhejiang Normal University"
+    },
+    {
+      "name": "Zhu, Yonggen",
+      "affiliation": "College of Computer Science and Technology, Zhejiang Normal University"
+    },
+    {
+      "name": "Cui, Can",
+      "affiliation": "JinHua Municipal Central Hospital"
+    },
+    {
+      "name": "Chen, Lin",
+      "affiliation": "JinHua Municipal Central Hospital"
+    },
+    {
+      "name": "Tong, Minfeng",
+      "affiliation": "JinHua Municipal Central Hospital"
+    },
+    {
+      "name": "Xu, Hao",
+      "affiliation": "College of Mathematical Medicine, Zhejiang Normal University"
+    },
+    {
+      "name": "Li, Ya",
+      "affiliation": "College of Mathematical Medicine, Zhejiang Normal University"
+    },
+    {
+      "name": "Wen, Jianming",
+      "affiliation": "College of Mathematical Medicine, Zhejiang Normal University"
+    },
+    {
+      "name": "Chen, Kang",
+      "affiliation": "College of Mathematical Medicine, Zhejiang Normal University"
+    }
+  ],
+  "keywords": [
+    "deep reinforcement learning",
+    "imitation learning",
+    "ultrasound ablation",
+    "prostate treatment",
+    "MATLAB",
+    "k-Wave"
+  ],
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/zhuzhucool/IL-DRL-ablation",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
