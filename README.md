@@ -83,13 +83,14 @@ See `TRAINING.md` for hyperparameters and environment details.
 ## Reproducibility
 
 See `REPRODUCIBILITY.md` for the app workflow and figure-level mapping. The
-current reproducibility-package commit is:
+reproducibility package should be cited using the archived GitHub release tag:
 
 ```text
-04f7a5288385bd48fd0a19f1892bed54043081b2
+v1.0.1
 ```
 
-Publish a `v1.0.0` GitHub release from this commit before finalizing the Zenodo archive.
+Record the exact release commit hash in the GitHub release and Zenodo archive
+metadata when the release is finalized.
 
 ## Included Data
 
