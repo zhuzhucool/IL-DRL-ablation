@@ -83,14 +83,13 @@ See `TRAINING.md` for hyperparameters and environment details.
 ## Reproducibility
 
 See `REPRODUCIBILITY.md` for the app workflow and figure-level mapping. The
-current checked development commit before the final cleanup commit is:
+current reproducibility-package commit is:
 
 ```text
-6f9b7dab784a9868a3e398bbae57521c8c7986b4
+04f7a5288385bd48fd0a19f1892bed54043081b2
 ```
 
-After the final cleanup commit is created, update this hash and publish a
-`v1.0.0` GitHub release before finalizing the Zenodo archive.
+Publish a `v1.0.0` GitHub release from this commit before finalizing the Zenodo archive.
 
 ## Included Data
 

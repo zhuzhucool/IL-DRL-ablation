@@ -7,10 +7,9 @@ and pretrained agents needed to reproduce the archived simulation workflows.
 
 - GitHub repository: https://github.com/zhuzhucool/IL-DRL-ablation
 - Zenodo DOI: https://doi.org/10.5281/zenodo.20133085
-- Current checked development commit: `6f9b7dab784a9868a3e398bbae57521c8c7986b4`
+- Current reproducibility-package commit: `04f7a5288385bd48fd0a19f1892bed54043081b2`
 
-After the final cleanup commit is created, update the commit hash above and tag
-the release as `v1.0.0` before publishing the Zenodo archive.
+Tag the release as `v1.0.0` from this commit before publishing the Zenodo archive.
 
 ## Included Data
 
