@@ -22,9 +22,32 @@ Thumbs.db
 # Local assistant/tooling state
 .claude/
 .codex/
+.codex
+.agents/
 
 # Archives and local documents not needed for the GitHub code release
 *.zip
+*.rar
 *.doc
 *.docx
 *.pdf
+AblationEnv_收集/
+
+# Manuscript/review screenshots and local notes
+image*.png
+bc8c580383bc8a202f622f9426604d7d.png
+微信图片_*.png
+sensitivity_config_review.md
+
+# Training outputs and exploratory variants
+trainCode/0624/agent合集/
+trainCode/0624/agent_checkpoints/
+trainCode/0624/*.asv
+trainCode/beif.m
+trainCode/ceshi.m
+trainCode/duibi.m
+trainCode/error_xiaoron.m
+trainCode/performer.m
+trainCode/rotof_beif.m
+trainCode/rot_guiyiout_test_error_abliation.m
+app1.mlapp

@@ -10,7 +10,7 @@ This repository is the code release associated with the manuscript:
 
 > Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation
 
-The code provides the simulation environment, controller implementation, example data, and pre-trained agent files used to support reproducibility of the main computational results.
+The code provides the simulation environment, controller implementation, example data, training code, expert demonstration data, and pre-trained agent files used to support reproducibility of the main computational results.
 
 ## Citation
 
@@ -24,12 +24,18 @@ Lin, S., Zhu, Y., Cui, C., Chen, L., Tong, M., Xu, H., Li, Y., Wen, J., & Chen, 
 - `agent/`: Pre-trained controller agent files used by the DRL and IL-DRL modes.
 - `data/`: Example input data, transducer frequency data, and UI image assets.
 - `drl_pid/`: Simulation and controller support code, including the bundled k-Wave toolbox.
+- `trainCode/0624/`: Archived manuscript training workflow for behavior cloning plus PPO.
+- `trainCode/expertData_dist.mat`: Expert demonstrations used for behavior cloning.
+- `TRAINING.md`: Training configuration and reproduction instructions.
+- `REPRODUCIBILITY.md`: App and figure-level reproduction guide.
+- `DATA_AVAILABILITY.md`: Data, archive, and release information.
 
 ## Requirements
 
 - MATLAB R2024a with App Designer support.
-- MATLAB toolboxes required by the code, including image processing and reinforcement learning functionality where applicable.
+- MATLAB toolboxes required by the code, including Reinforcement Learning Toolbox, Deep Learning Toolbox, Image Processing Toolbox, Signal Processing Toolbox, and Statistics and Machine Learning Toolbox.
 - k-Wave is included under `drl_pid/k-Wave`.
+- See `requirements.txt` for the archived dependency list.
 
 ## Quick Start
 
@@ -58,6 +64,34 @@ Lin, S., Zhu, Y., Cui, C., Chen, L., Tong, M., Xu, H., Li, Y., Wen, J., & Chen, 
    - Import a transducer frequency path if using custom frequency data. If not selected, the app defaults to the repository `data/` directory.
    - Select the controller mode and run the ablation simulation.
 
+## Training Reproduction
+
+The archived training workflow is in `trainCode/0624/`:
+
+```matlab
+addpath(genpath(pwd));
+run(fullfile('trainCode', '0624', 'rotof_beif.m'));
+```
+
+The script uses `trainCode/expertData_dist.mat` for behavior cloning,
+`trainCode/0624/210.mat` for training prostate-shape input, and the shared
+frequency data in `data/`. Checkpoints generated during a new training run are
+written to `trainCode/0624/agent_checkpoints/` and are ignored by Git.
+
+See `TRAINING.md` for hyperparameters and environment details.
+
+## Reproducibility
+
+See `REPRODUCIBILITY.md` for the app workflow and figure-level mapping. The
+current checked development commit before the final cleanup commit is:
+
+```text
+6f9b7dab784a9868a3e398bbae57521c8c7986b4
+```
+
+After the final cleanup commit is created, update this hash and publish a
+`v1.0.0` GitHub release before finalizing the Zenodo archive.
+
 ## Included Data
 
 The repository includes small example `.mat` and image files used by the app:
@@ -69,6 +103,8 @@ The repository includes small example `.mat` and image files used by the app:
 - `data/Q_1600_005mm_down_400_02mm_10mhz.mat`
 - `agent/Agent1000.mat`
 - `agent/Agent325.mat`
+- `trainCode/expertData_dist.mat`
+- `trainCode/0624/210.mat`
 
 Before making the repository public, confirm that these files do not contain private clinical data, unpublished third-party data, or other restricted information.
 
@@ -87,4 +123,7 @@ Additional k-Wave citation guidance is included in `drl_pid/k-Wave/helpfiles/k-w
 
 ## License
 
-Add the license for this project before public release. The bundled k-Wave toolbox remains under its own LGPL license terms.
+This project is released under the MIT License. See `LICENSE`. The bundled
+k-Wave toolbox remains under its own license terms; the original k-Wave license
+files are retained in `drl_pid/k-Wave/license/` and `trainCode/drl_pid/k-Wave/license/`
+where present.

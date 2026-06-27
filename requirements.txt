@@ -1,0 +1,19 @@
+# Software environment used for the archived release.
+#
+# This is a MATLAB project, so this file records MATLAB and toolbox
+# dependencies rather than Python packages.
+
+MATLAB==R2024a
+MATLAB App Designer==R2024a
+Reinforcement Learning Toolbox==R2024a
+Deep Learning Toolbox==R2024a
+Image Processing Toolbox==R2024a
+Signal Processing Toolbox==R2024a
+Statistics and Machine Learning Toolbox==R2024a
+
+# Bundled third-party toolbox
+k-Wave MATLAB Toolbox==1.4.x
+
+# Recommended runtime
+OS==Windows 10/11 or Linux with MATLAB R2024a
+GPU==NVIDIA CUDA-compatible GPU recommended for training; CPU can run small verification jobs

@@ -1,7 +1,9 @@
 {
   "title": "IL-DRL Ablation Simulation Platform",
   "upload_type": "software",
-  "description": "MATLAB R2024a code release for the manuscript \"Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation\". The repository includes the simulation environment, controller implementation, example data, and pre-trained agent files for prostate ultrasound ablation simulation.",
+  "description": "MATLAB R2024a code release for the manuscript \"Imitation learning-embedded deep reinforcement learning controller for MRI guided multi-frequency interstitial ultrasound ablation\". The repository includes the simulation environment, controller implementation, behavior-cloning plus PPO training code, expert demonstration data, example data, and pre-trained agent files for prostate ultrasound ablation simulation.",
+  "version": "1.0.0",
+  "license": "MIT",
   "creators": [
     {
       "name": "Lin, Shengrong",
