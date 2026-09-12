@@ -39,8 +39,8 @@ config.ppoClipFactor = 0.2;
 config.ppoEntropyLossWeight = 0.01;
 config.ppoMiniBatchSize = 512;
 config.ppoNumEpoch = 10;
-config.ppoGAEFactor = 0.95;
-config.ppoDiscountFactor = 0.9992;
+config.ppoGAEFactor = 0.98;
+config.ppoDiscountFactor = 0.95;
 
 config.maxEpisodes = 1000;
 config.maxStepsPerEpisode = 2000;

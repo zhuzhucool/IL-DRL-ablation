@@ -55,8 +55,8 @@ computationally expensive and can take a long time on CPU.
 - PPO epochs per update: 10
 - PPO clip factor: 0.2
 - PPO entropy loss weight: 0.01
-- PPO GAE factor: 0.95
-- PPO discount factor: 0.9992
+- PPO GAE factor: 0.98
+- PPO discount factor: 0.95
 
 Generated training checkpoints are written to
 `trainCode/0624/agent_checkpoints/`. This output directory is intentionally
