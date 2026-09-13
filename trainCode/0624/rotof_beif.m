@@ -30,8 +30,8 @@ config.behaviorCloningBatchSize = 1024;
 config.behaviorCloningLearnRate = 1e-4;
 config.behaviorCloningActionNoiseStd = 0.1;
 
-config.actorLearnRate = 1e-4;
-config.criticLearnRate = 3e-4;
+config.actorLearnRate = 5e-5;
+config.criticLearnRate = 1e-3;
 config.gradientThreshold = 1;
 
 config.ppoExperienceHorizon = 10000;
@@ -42,7 +42,7 @@ config.ppoNumEpoch = 10;
 config.ppoGAEFactor = 0.98;
 config.ppoDiscountFactor = 0.95;
 
-config.maxEpisodes = 1000;
+config.maxEpisodes = 1500;
 config.maxStepsPerEpisode = 2000;
 config.scoreAveragingWindow = 30;
 config.saveAgentRewardThreshold = -200;
@@ -179,12 +179,12 @@ function actorNet = buildGaussianActorNetwork(numObs, numAct, actInfo, hiddenUni
     sharedPath = [
         featureInputLayer(numObs, Name="netObsIn")
         fullyConnectedLayer(hiddenUnits)
-        reluLayer(Name="sharedFC")
+        tanhLayer(Name="sharedFC")
     ];
 
     meanPath = [
         fullyConnectedLayer(hiddenUnits, Name="meanFC")
-        reluLayer
+        tanhLayer
         fullyConnectedLayer(numAct, Name="actionMean")
         tanhLayer
         scalingLayer(Name="netMout", Scale=actInfo.UpperLimit)
@@ -192,7 +192,7 @@ function actorNet = buildGaussianActorNetwork(numObs, numAct, actInfo, hiddenUni
 
     sdevPath = [
         fullyConnectedLayer(hiddenUnits, Name="stdFC")
-        reluLayer
+        tanhLayer
         fullyConnectedLayer(numAct, Name="actionStd")
         softplusLayer(Name="netSDout")
     ];
@@ -209,9 +209,9 @@ function criticNet = buildCriticNetwork(numObs, hiddenUnits)
     criticNet = dlnetwork([
         featureInputLayer(numObs)
         fullyConnectedLayer(hiddenUnits)
-        reluLayer
+        tanhLayer
         fullyConnectedLayer(hiddenUnits)
-        reluLayer
+        tanhLayer
         fullyConnectedLayer(1)
     ]);
 end

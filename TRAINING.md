@@ -45,10 +45,13 @@ computationally expensive and can take a long time on CPU.
 - Actor mean-path hidden units: 256
 - Actor standard-deviation hidden units: 256
 - Critic hidden units: 256 and 256
+- Actor and critic hidden-layer activation: tanh
+- PPO actor learning rate: 5e-5
+- PPO critic learning rate: 1e-3
 - Behavior-cloning epochs: 2000
 - Behavior-cloning batch size: 1024
 - Behavior-cloning learning rate: 1e-4
-- PPO maximum episodes: 1000
+- PPO maximum episodes: 1500
 - PPO maximum steps per episode: 2000
 - PPO experience horizon: 10000
 - PPO mini-batch size: 512
